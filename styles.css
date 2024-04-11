@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-sizing: border-box;   
+}
+
+body {
+    background: #202124;
+    color: #bdc1c6;
+    padding: 14px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-family: "Press Start 2P", sans-serif, 'Times New Roman';
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    justify-content: space-between;
+
+}
+
+nav, 
+section {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+}
+
+header section img {
+    max-width: 40px;
+    border-radius: 50%;
+    border: 2px solid blueviolet;
+}
+
+.greyLink {
+    color: lightgray;
+}
+
+.whiteLink {
+    color: white;
+}
+
+a {
+    text-decoration: unset;
+    font-size: 0.8em;
+    color: white;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.mainTitle {
+    font-size: 2em;
+    font-family: "Press Start 2P", Times, serif;
+     
+}
+
+.searchBar {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+    gap: 14px;
+    border: 1px solid gray;
+    padding: 14px;
+    border-radius: 24px;
+}
+
+#directions{
+    color: #bdc1c6;
+}
+
+.searchBar:hover {
+    border-color: transparent;
+    background: #334155;
+    cursor: pointer;;
+}
+
+.iconButtonContainer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+}
+
+.iconButton {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    
+}
+
+input {
+    background: transparent;
+    outline: none;
+    border: unset;
+    color: white;
+    flex: 1;
+}
+
+.searchButtonsContainer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: white;
+}
+
+.searchButtonsContainer button {
+    padding: 10px 14px;
+    border-radius: 4px;
+    background: #334155;
+    border: 1px solid transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.buttonLink{
+    text-decoration: none;
+}
+ 
+.searchButtonsContainer button:hover {
+    border: 1px solid darkgray;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer > section:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid gray;
+}
+
+.footerLink {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.footerLink a {
+    cursor: pointer;
+}
+@media (min-width: 540px) {
+    footer > section:last-child {
+        flex-direction: row;
+    }
+
+
+}
